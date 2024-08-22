@@ -1,0 +1,15 @@
+console.log("Hamburger Icon Cargado");
+
+(function() {
+    const MAIN_OBJ = {
+        init: function() {
+            this.eventhandlers();
+        },
+        eventhandlers: function() {
+            document.querySelector('.hamburger_icon').addEventListener('click', function() {
+                document.querySelector('.menu-container').classList.toggle('menu-open');
+            });
+        }
+    }
+    MAIN_OBJ.init(); 
+})();
